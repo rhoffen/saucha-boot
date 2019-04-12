@@ -1,44 +1,76 @@
+html {
+  font-size: 18px;
+}
+
+body {
+  text-align: center;
+}
+
+/*html,*/
+body,
+footer {
+  height: 100%;
+  background-color: rgba(22, 53, 20, 0.2);
+}
+
 .jumbotron {
-  /*background-image: url("../images/background-yellow-green.jpg");
-  background-size: cover;
-  background-position: center bottom;
-  background-repeat: no-repeat;*/
+  background-color: rgba(22, 53, 20, 0.3);
+  /*max-height: 50vh;*/
 }
 
 #logo {
   display: block;
-  width: 300px;
+  height: 20vh;
+  /*width: 300px;*/
 }
 
-h1 {
+.nav-item {
+  font-size: 1.25rem;
+}
+
+h1, h2 {
   font-family: 'Marck Script', cursive;
-  text-align: center;
 }
-
 
 .fas.fa-bars {
   width: 100%;
-  text-align: center;
 }
 
 .parallax-container {
-  width: 100%;
-  height: 100%;
+  /*width: 100%;*/
+  margin: auto;
+  color: white;
+  /*height: 100%;*/
   /*background-color: rgba(248,245,238,0.3125);*/
-  background-color: rgba(248,245,238,0.5);
+  /*background-color: rgba(248,245,238,0.5);*/
+  background: rgba(22, 53, 20,.75);
+  /*opacity: 0.5;*/
 }
 
 .parallax {
   /* The image used */
 background-image: url('../images/purity-sunflower.jpg');
 /* Full height */
-height: 100%;
+/*height: 100%;*/
 
 /* Create the parallax scrolling effect */
 background-attachment: fixed;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
+}
+
+.card {
+  text-align: left;
+  color: black;
+}
+
+.card-text:last-child {
+  margin-bottom: 1rem;
+}
+
+.card-body a.btn {
+  /*border: 2px solid red;*/
 }
 
 .photo {
@@ -48,4 +80,53 @@ background-size: cover;
 
 .photo img {
   width: 100%;
+}
+
+footer {
+  height: auto;
+}
+
+@media only screen and (min-width: 992px) {
+  .row {
+    justify-content: space-around;
+  }
+
+  .card {
+    max-width: 20%;
+    /*margin: inherit */
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .row {
+    justify-content: space-around;
+  }
+
+  .card {
+    max-width: 23.5%;
+    /*margin: inherit */
+  }
+
+  .card img {
+    height: 30%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .card {
+    max-width: 275px;
+    /*margin: auto;*/
+  }
+
+  .card img {
+    height: 35%;
+  }
+}
+
+@media only screen and (min-width: 1326px) {
+  .card {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
 }
